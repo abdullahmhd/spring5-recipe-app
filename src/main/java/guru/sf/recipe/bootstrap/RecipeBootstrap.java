@@ -133,7 +133,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "Read more: http://www.simplyrecipes.com/recipes/perfect_guacamole/#ixzz4jvoun5ws");
 
         guacRecipe.setNotes(guacNotes);
-        guacNotes.setRecipe(guacRecipe);
+//        guacNotes.setRecipe(guacRecipe); // added this code in setNotes method
         guacRecipe.setImage(this.extractBytes("Guacamole.jpg"));
 
         //very redundent - could add helper method, and make this simpler
@@ -187,7 +187,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "Read more: http://www.simplyrecipes.com/recipes/spicy_grilled_chicken_tacos/#ixzz4jvu7Q0MJ");
 
         tacosRecipe.setNotes(tacoNotes);
-        tacoNotes.setRecipe(tacosRecipe);
+//        tacoNotes.setRecipe(tacosRecipe); // added this code in setNotes method
 
         tacosRecipe.setImage(this.extractBytes("GrilledChickenTacos.jpg"));
 
