@@ -2,18 +2,21 @@ package guru.sf.recipe.services;
 
 import guru.sf.recipe.domain.Recipe;
 import guru.sf.recipe.repositories.RecipeRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
+@Slf4j
 @Service
 public class RecipeServiceImpl implements RecipeService {
 
     private final RecipeRepository recipeRepository;
 
     public RecipeServiceImpl(RecipeRepository recipeRepository) {
+        log.info("Testing Lombok logging");
         this.recipeRepository = recipeRepository;
     }
 
