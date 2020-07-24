@@ -31,7 +31,8 @@ class CategoryTest {
 
     @Test
     void getDescription() {
-        assertEquals("Wrong Desc", this.category.getDescription());
+//        assertEquals("Wrong Desc", this.category.getDescription());
+        assertEquals(this.descVal, this.category.getDescription());
     }
 
     @Test

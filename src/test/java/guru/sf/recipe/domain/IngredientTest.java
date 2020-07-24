@@ -34,7 +34,8 @@ class IngredientTest {
 
     @Test
     void getDescription() {
-        assertEquals("Wrong desc", this.ingredient.getDescription());
+//        assertEquals("Wrong desc", this.ingredient.getDescription());
+        assertEquals(this.descVal, this.ingredient.getDescription());
     }
 
     @Test
@@ -43,7 +44,7 @@ class IngredientTest {
     }
 
     @Test
-    void getUom() {
+    void getUom() throws Exception {
 //        throw new RuntimeException("Sonething went wrong!");
     }
 
