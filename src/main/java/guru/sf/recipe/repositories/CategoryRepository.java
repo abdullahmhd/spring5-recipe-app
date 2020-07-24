@@ -2,11 +2,11 @@ package guru.sf.recipe.repositories;
 
 import guru.sf.recipe.domain.Category;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Component
+@Repository
 public interface CategoryRepository extends CrudRepository<Category, Long> {
 
     Optional<Category> findByDescription(String description);
