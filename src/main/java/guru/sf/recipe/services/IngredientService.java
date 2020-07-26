@@ -1,0 +1,8 @@
+package guru.sf.recipe.services;
+
+import guru.sf.recipe.commands.IngredientCommand;
+
+public interface IngredientService {
+
+    IngredientCommand findByRecipeIdAndIngredientId(Long recipeId, Long ingredientId);
+}
