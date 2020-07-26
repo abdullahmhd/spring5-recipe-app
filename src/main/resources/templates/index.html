@@ -62,7 +62,7 @@
                             <td th:text="${recipe.source}">SimpleRRecipess</td>
                             <td th:text="${recipe.difficulty}">HARD</td>
                             <td th:text="${recipe.servings}">5</td>
-                            <td><a href="#" th:href="@{'/recipe/show/' + ${recipe.id}}">View</a></td>
+                            <td><a href="#" th:href="@{'/recipe/' + ${recipe.id} + '/update'}"</a>View</td>
 <!--                                   th:text="${recipe.id}">View</a></td>-->
                         </tr>
                         </tbody>
